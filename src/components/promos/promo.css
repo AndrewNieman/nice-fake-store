@@ -1,0 +1,38 @@
+.promo {
+  display: flex;
+  width: 100%;
+  padding: 2em 0;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  position: relative;
+  display: table;
+  background-color: #a3c4bc;
+  margin-right: 2px;
+  width: calc(50% - 2px);
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  position: relative;
+  display: table;
+  background-color: #bfd7b5;
+  margin-left: 2px;
+  width: calc(50% - 2px);
+}
+@media only screen and (max-width: 600px) {
+  .promo {
+    flex-wrap: wrap;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+}

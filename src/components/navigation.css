@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #6f87b5;
+}
+.items {
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.items a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 1em;
+  font-size: 1.44rem;
+  padding-right: 1em;
+
+  text-transform: uppercase;
+}
+.items a:hover {
+  text-decoration: underline;
+}
+.cart img {
+  max-width: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+  }
+}
